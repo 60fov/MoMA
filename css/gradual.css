@@ -1,0 +1,296 @@
+* {
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+@media (max-width: 70rem) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 60rem) {
+  html {
+    font-size: 11px;
+  }
+}
+@media (max-width: 50rem) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (max-width: 40rem) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 30rem) {
+  html {
+    font-size: 5px;
+  }
+}
+@media (max-width: 20rem) {
+  html {
+    font-size: 4px;
+  }
+}
+@media (max-width: 10rem) {
+  html {
+    font-size: 2px;
+  }
+}
+
+body {
+  background: black;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.ful-w {
+  width: 100vw;
+}
+
+.ful-h {
+  height: 100vh;
+}
+
+.fil-w {
+  width: 100%;
+}
+
+.fil-h {
+  height: 100%;
+}
+
+.abs-00 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.hcent-text-parent {
+  text-align: center;
+}
+
+.hcent-text {
+  display: inline-block;
+}
+
+.horizon-nav {
+  overflow: hidden;
+}
+.horizon-nav ul li {
+  float: left;
+}
+.horizon-nav ul li a {
+  display: block;
+}
+
+#header {
+  padding: 20px;
+  position: absolute;
+}
+#header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 0px;
+}
+#header a {
+  padding-right: 10px;
+}
+
+#top {
+  width: 100vw;
+  height: 56.25vw;
+  margin-bottom: 20vw;
+}
+#top h2 {
+  padding: 35vw 0 0 0;
+  font-size: 6rem;
+  margin-left: -14vw;
+}
+#top h2::before {
+  content: "exhibitions";
+  position: absolute;
+  left: 33vw;
+}
+#top h2::after {
+  content: "exhibitions";
+  position: absolute;
+  left: 70vw;
+  z-index: 1;
+}
+#top .art {
+  background: radial-gradient(circle at 0% 100%, #000, transparent 50%), radial-gradient(circle at 90% 80%, #f00, transparent 50%), radial-gradient(circle at 0 0, #0ff, transparent 40%), linear-gradient(180deg, #fff, #e76378, #000);
+  top: 7vw;
+  left: 52vw;
+  width: 31vw;
+  height: 62vw;
+  border-radius: 0 0 100% 0%/0% 0% 50% 0%;
+}
+
+.article {
+  width: 100vw;
+  margin-top: -20vw;
+  position: relative;
+}
+.article header {
+  height: 56.25vw;
+  padding-bottom: 5vw;
+}
+.article header h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  padding-top: 35vw;
+}
+.article header .art {
+  width: 31vw;
+  height: 31vw;
+  top: 20vw;
+}
+.article > section {
+  position: relative;
+  margin-left: 21vw;
+  width: 60vw;
+  padding-bottom: 30vw;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.article > section ul {
+  padding-left: 15vw;
+}
+.article > section ul li {
+  padding: 0 0 40px 0;
+}
+.article > section ul li h4 {
+  cursor: pointer;
+  outline: none;
+  transition: color 200ms ease-out;
+}
+.article > section ul li h4:focus {
+  color: green;
+}
+.article > section ul li h4:focus + p {
+  display: block;
+}
+.article > section ul li p {
+  display: none;
+  font-size: 1rem;
+}
+.article > section .art-bord {
+  position: absolute;
+  width: 8px;
+  height: 100%;
+  background: white;
+}
+
+#view header h3 {
+  margin-left: 8vw;
+}
+#view header h3::before {
+  content: "on view";
+  position: absolute;
+  left: 40vw;
+}
+#view header h3::after {
+  content: "on view";
+  position: absolute;
+  left: 70vw;
+}
+#view header .art {
+  background: radial-gradient(circle at 100% 0%, #FDD831, transparent 60%), radial-gradient(circle at 0% 100%, #5626FA, transparent 60%), radial-gradient(circle at 0 0, #fff, black 60%);
+  left: 21vw;
+  z-index: -1;
+}
+#view > section ul li h4:focus {
+  color: #5626FA;
+}
+#view > section .art-bord {
+  background: linear-gradient(180deg, #5626FA, #FDD831, black);
+}
+
+#upcoming header h3 {
+  margin-left: -1vw;
+}
+#upcoming header h3::before {
+  content: "upcoming";
+  position: absolute;
+  left: 37vw;
+}
+#upcoming header h3::after {
+  content: "upcoming";
+  position: absolute;
+  left: 70vw;
+}
+#upcoming header .art {
+  background: radial-gradient(circle at 0% 0%, #24DB27, transparent 60%), radial-gradient(circle at 100% 100%, #0D3EFB, transparent 60%), radial-gradient(circle at 0 100%, #fff, black 60%);
+  left: 52vw;
+  z-index: -1;
+}
+#upcoming > section ul li h4:focus {
+  color: #24DB27;
+}
+#upcoming > section .art-bord {
+  background: linear-gradient(180deg, #24DB27, #0D3EFB, transparent);
+}
+
+#past header h3 {
+  margin-left: 15vw;
+  z-index: -2;
+}
+#past header h3::before {
+  content: "past";
+  position: absolute;
+  left: 37vw;
+  z-index: 2;
+}
+#past header h3::after {
+  content: "past";
+  position: absolute;
+  left: 63vw;
+  z-index: 2;
+}
+#past header .art {
+  background: radial-gradient(circle at 0% 100%, #E84B74, transparent 60%), radial-gradient(circle at 100% 0%, #F8A93C, transparent 60%), radial-gradient(circle at 0 0%, #fff, black 60%);
+  left: 21vw;
+  z-index: 1;
+}
+#past > section ul li h4:focus {
+  color: #E84B74;
+}
+#past > section .art-bord {
+  background: linear-gradient(180deg, #E84B74, #F8A93C, transparent);
+}
+
+aside {
+  visibility: hidden;
+}
+
+footer {
+  float: right;
+}
+footer p {
+  padding: 15px;
+}
+
+/*# sourceMappingURL=gradual.css.map */
